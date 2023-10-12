@@ -1,12 +1,5 @@
 package es.ifp.programacion.uf3.practica;
 
-/**
- * TAREA PENDIENTE ANTES DE ENTREGAR
- * 
- * REVISAR LOS COMENTARIOS JUNTO AL CÓDIGO
- * PROBAR EL PROGRAMA Y VER SI ES SÓLIDO Y CORREGIR DONDE FALLE
- */
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -21,12 +14,13 @@ import java.util.Scanner;
  * 
  * Este es un programa que tiene la función de gestionar ficheros ya sea creándolos, editándolos, etc.
  * El programa cuenta con un menú que se repite hasta que se desea salir del programa con la opción adecuada.
- * Tiene cuatro opciones diferentes:
+ * Tiene cinco opciones diferentes:
  * 
  * 1. Crear un fichero.
  * 2. Introducir info a un fichero.
  * 3. Leer un fichero.
  * 4. Eliminar un fichero.
+ * 5. Salir del programa.
  * 
  * El procedimiento principal contiene un bucle que se repite hasta que se sale del programa y, dentro de este bucle,
  * el menú en el que podemos escoger la opción que deseemos.
@@ -80,7 +74,7 @@ public class ProgramaPrincipal {
 				 * OPCIÓN CREAR FICHERO
 				 * 
 				 * En esta opción se comprobará si el fichero que introduce como ruta el usuario existe o no.
-				 * Llamada a la función 'fichExists' para comprobar si este fichero existe.
+				 * Llamada a la función 'fichExists' como condición del 'if' para comprobar si este fichero existe.
 				 * Si no existe, el programa llamará al procedimiento para crearlo 'crearFich' donde podemos elegir
 				 * crearlo o no.
 				 */
@@ -97,9 +91,11 @@ public class ProgramaPrincipal {
 				 * OPCIÓN ESCRIBIR EN FICHERO
 				 * 
 				 * En esta opción se comprueba si el fichero que se desea modificar existe o no llamando a la función
-				 *'fichExists'.
+				 *'fichExists' como condición del 'if'.
 				 *Si el fichero existe, el programa llama al procedimiento 'escribirFich' para escribir en el interior de éste.
 				 *Si el fichero no existe, el programa llama al procedimiento 'crearFich' donde podemos elegir crearlo o no.
+				 *Si el fichero se crea, por lo tanto existe, se llama al procedimiento 'escribirFich' que como habíamos
+				 *seleccionado en la opción.
 				 */
 				System.out.println("Introducción de información en un fichero");
 				System.out.println("Introduzca la ruta del fichero:");
@@ -120,9 +116,10 @@ public class ProgramaPrincipal {
 				 * OPCIÓN LEER UN FICHERO
 				 * 
 				 * En esta opción se comprueba si el fichero que se desea leer el contenido existe o no llamando a la función
-				 * 'fichExists'.
+				 * 'fichExists' como condición del 'if'.
 				 * Si el fichero existe, el programa llama a la función 'leerFich' y devuelve el contenido del fichero.
 				 * Si el fichero no existe, se llama al procedimiento 'crearFich' donde podemos elegir si crear el fichero o no.
+				 * Si se crea el fichero, el programa llama a la función 'leerFich' como habíamos elegido.
 				 */
 				System.out.println("Lectura de fichero de texto");
 				System.out.println("Introduzca la ruta del fichero:");
@@ -145,7 +142,7 @@ public class ProgramaPrincipal {
 				 * OPCIÓN ELIMINAR UN FICHERO
 				 * 
 				 * En esta opción se comprueba si el fichero que se desea leer el contenido existe o no llamando a la función
-				 * 'fichExists'.
+				 * 'fichExists' como condición del 'if'.
 				 * Si el fichero existe, el programa llama a la función 'borrarFich' para procesar la eliminación de éste.
 				 * Si el fichero no existe, el programa nos muestra un mensaje diciendo que el archivo que deseamos eliminar no 
 				 * existe.
@@ -163,7 +160,7 @@ public class ProgramaPrincipal {
 				 * OPCIÓN DE SALIDA DEL PROGRAMA
 				 * 
 				 * En esta opción únicamente se muestra un mensaje donde nos dice que salimos del programa y se cierra el bucle
-				 * romper la condición del while del final del bucle.
+				 * romper la condición del 'while' del final del bucle.
 				 */
 				System.out.println("Salir del programa.");
 			break;
@@ -257,6 +254,8 @@ public class ProgramaPrincipal {
 		 * 
 		 * 1. Clase File de 'f' para introducir el fichero.
 		 * 2. Variable tipo String 'crear' contenedora de la opción si se crea o no el fichero.
+		 * 
+		 * Se inicia 'f' como un nuevo fichero con la ruta que llega del procedimiento principal.
 		 */
 		File f = null;
 		String crear;
@@ -265,8 +264,6 @@ public class ProgramaPrincipal {
 		
 		/**
 		 * BLOQUE CREACIÓN DEL FICHERO
-		 * 
-		 * Se inicia 'f' como un nuevo fichero con la ruta que llega del procedimiento principal.
 		 * 
 		 * El programa pregunta si deseamos crear el fichero.
 		 * Se inicia un bucle do-while donde elegiremos la opción 'S' o 'N' según queramos crear o no el fichero.
@@ -317,6 +314,8 @@ public class ProgramaPrincipal {
 		 * 4. Variable tipo String 'opcion' para almacenar la opción que desea realizar el usuario.
 		 * 5. Variable tipo String 'text' para almacenar el texto que desea introducir el usuario al contenido del fichero.
 		 * 6. Variable tipo boolean 'masText' para sobrescribir o añadir texto al contenido del fichero.
+		 * 
+		 * Se inicia 'f' como un nuevo fichero con la ruta que llega del procedimiento principal.
 		 */
 		File f = null;
 		FileWriter fw = null;

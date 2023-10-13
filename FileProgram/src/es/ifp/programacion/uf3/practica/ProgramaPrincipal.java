@@ -299,7 +299,7 @@ public class ProgramaPrincipal {
 /**
  * PROCEDIMIENTO DE MODIFICAR EL CONTENIDO DE UN FICHERO
  * 
- * Este procedimiento se encarga de escribir contenido o sobrescribir el existente de un fichero siempre y cuando exista.
+ * Este procedimiento se encarga de escribir contenido o sobreescribir el existente de un fichero siempre y cuando exista.
  * @param nameF como contenedor de la variable 'ruta' del procedimiento principal.
  * @param sc como contenedor de la clase Scanner 'sc' del procedimiento principal.
  */
@@ -313,7 +313,7 @@ public class ProgramaPrincipal {
 		 * 3. Clase BufferedWriter 'bw' para introducir un escritor más eficiente.
 		 * 4. Variable tipo String 'opcion' para almacenar la opción que desea realizar el usuario.
 		 * 5. Variable tipo String 'text' para almacenar el texto que desea introducir el usuario al contenido del fichero.
-		 * 6. Variable tipo boolean 'masText' para sobrescribir o añadir texto al contenido del fichero.
+		 * 6. Variable tipo boolean 'masText' para sobreescribir o añadir texto al contenido del fichero.
 		 * 
 		 * Se inicia 'f' como un nuevo fichero con la ruta que llega del procedimiento principal.
 		 */
@@ -332,7 +332,7 @@ public class ProgramaPrincipal {
 		 * Dentro de un bucle 'do-while' el programa nos reclama la opción que queremos tomar para introducir texto al fichero
 		 * y el propio texto que queremos introducir.
 		 * 
-		 * El programa nos pregunta que deseamos hacer con la variable 'opción': sobrescribir texto, añadir nuevo o salir del programa.
+		 * El programa nos pregunta que deseamos hacer con la variable 'opción': sobreescribir texto, añadir nuevo o salir del programa.
 		 * Dependiendo la opción que introduzcamos, entramos en un condicional (if) donde determinamos el estado de la variable boolean 
 		 * 'masText' que cambia a verdadero o falso, verdadero añade más contenido al fichero y falso lo reemplaza.
 		 * Una vez introducimos la opción, el programa nos reclama el texto que queremos introducir.
@@ -350,7 +350,7 @@ public class ProgramaPrincipal {
 			
 			/**
 			 * Si 'opcion' es 'S' o 'A', entramos en el 'if' 
-			 * Si 'opcion' es 'S', 'masText' es falso y el texto se sobrescribirá.
+			 * Si 'opcion' es 'S', 'masText' es falso y el texto se sobreescribirá.
 			 * Si 'opcion' es 'A', 'masText' es verdadero y el texto se añadirá al final en una nueva línea.
 			 * 
 			 * Una vez definimos 'masText', el programa pedirá el texto que queremos introducir en el fichero.

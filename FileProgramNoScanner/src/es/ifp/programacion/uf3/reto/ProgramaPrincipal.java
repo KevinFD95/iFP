@@ -16,9 +16,9 @@ import java.io.InputStreamReader;
  * Introducimos la clase InputStreamReader para introducir datos a través del teclado que serán leídos por la clase
  * BufferedReader de la siguiente manera:
  * 		InputStreamReader isr = new InputStreamReader(System.in) -> De esta manera introducimos en la variable 'isr'
- * 																	el input de datos a través del teclado.
+ * 									    el input de datos a través del teclado.
  * 		BufferedReader br = new BufferedReader(isr) -> 	De esta manera indicamos al BufferedReader que lea los datos
- * 														introducidos en el InputStreamReader.
+ * 								introducidos en el InputStreamReader.
  * 
  * El programa tiene un menú con tres opciones diferentes: crear un fichero, escribir en un fichero y salir del programa.
  * Las dos opciones que se encargan de crear y modificar ficheros están definidas en dos procedimientos distintos y son

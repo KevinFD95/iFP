@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<clase>
+	<estudiante>
+		<id>A001</id>
+		<nombre>Antonio</nombre>
+		<apellidos>Guerra Guerra</apellidos>
+		<nota>8</nota>
+	</estudiante>
+	
+	<estudiante>
+		<id>A031</id>
+		<nombre>Maria</nombre>
+		<apellidos>De la Luz Guerra</apellidos>
+		<nota>9</nota>
+	</estudiante>
+	
+	<estudiante>
+		<id>A033</id>
+		<nombre>Juan Pedro</nombre>
+		<apellidos>Torres Sena</apellidos>
+		<nota>6</nota>
+	</estudiante>
+	
+	<estudiante>
+		<id>A040</id>
+		<nombre>Lucia</nombre>
+		<apellidos>Llanos Tarifa</apellidos>
+		<nota>9</nota>
+	</estudiante>
+</clase>

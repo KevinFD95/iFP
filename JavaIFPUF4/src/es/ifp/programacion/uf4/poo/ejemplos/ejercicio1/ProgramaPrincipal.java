@@ -20,7 +20,6 @@ public class ProgramaPrincipal {
 		
 		Libro libro2 = new Libro("El peligro de estar cuerda", "Rosa Montero", "Seix Barral", "El peligro de estar cuerda habla (...)", 19.85f);
 		
-		
 		titulo = libro1.getTitulo();
 		System.out.println("El título del libro es: "+titulo);
 		
@@ -31,7 +30,5 @@ public class ProgramaPrincipal {
 		if (isbn != null) {
 			System.out.println("El ISBN del libro es: "+isbn);
 		}
-		
 	}
-
 }

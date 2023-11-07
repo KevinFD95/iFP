@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"es.ifp.programacion.uf3.reto","l":"ProgramaPrincipal"}];updateSearchResults();
